@@ -9,16 +9,12 @@ class Item:
         ls=[]
         ls.append(self.name)
         print(ls)
-
-
     def calu_totalprice(self):
         return self.price * self.quantity
     
     def applydis(self):
         self.price=self.price * Item.pay_rate
         print(self.price)
-
-
 
 item1 = Item("Phone", 100, 1)
 item2 = Item("Laptop", 1000, 3)
